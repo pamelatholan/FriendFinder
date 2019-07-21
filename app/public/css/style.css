@@ -5,7 +5,12 @@
 h1 {
     color: white;
     margin-top: -50px;
-    margin-left: 500px;
+    margin-left: 475px;
+    font-size: 20px;
+    font-family: 'Atomic Age', cursive;
+    /* font-family: 'Bigelow Rules', cursive; */
+    /* font-family: 'Bahiana', cursive; */
+    /* font-family: 'IM Fell DW Pica SC', serif; */
 
 }
 
