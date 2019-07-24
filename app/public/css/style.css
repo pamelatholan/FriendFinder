@@ -45,13 +45,59 @@ body {
     font-family: 'Atomic Age', cursive;
     font-size: 30px;
     padding-right: 300px;
-
 }
 
 #col2 {
     font-family: 'Atomic Age', cursive;
     font-size: 30px;
     padding-left: 200px;
+}
+
+#col3 {
+    font-family: 'Atomic Age', cursive;
+    font-size: 30px;
+    padding-left: 300px;
+    margin-top: 10px;
+}
+
+#col4 {
+    font-family: 'Atomic Age', cursive;
+    font-size: 30px;
+    padding-left: 300px;
+    margin-top: 10px;
+}
+
+#header {
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+h2 {
+    font-family: 'Atomic Age', cursive;
+    margin-left: 200px;
+    
+}
+
+h4 {
+    font-family: 'Atomic Age', cursive;
 
 }
+
+h5 {
+    font-family: 'Atomic Age', cursive;
+    margin-left: 200px;
+}
+
+#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10 {
+    margin-left: 200px;
+}
+
+#submitButton {
+    margin-left: 500px;
+    margin-bottom: 20px;
+
+}
+
+
+
 

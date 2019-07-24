@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3094232144.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Atomic+Age&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,44 +16,43 @@
     <title>Survey</title>
 </head>
 <body>
-        <header>
-            <nav>
-                <div class="nav-wrapper pink accent-2">
-                    <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
-                    <a href="/" class="brand-logo" id="logo">Friend Finder</a>
-                    <ul class="right hide-on-med-and-down" id="head-nav-links">
-                        <li><a href="/survey">Survey</a></li>
-                        <li><a href="/api/friends">API Friends List</a></li>
-                    </ul>
+        <div class="container2">
+                <div class="row">
+                  <div class="col-md-6" id="col3">
+                        <a href="/home" class="text-light">Home</a>
+                  </div>
+                  <div class="col-md-6" id="col4">
+                        <a href="/api/friends" class="text-light">API Friends List</a>
+                  </div>
                 </div>
-            </nav>
-        </header>
-    
+            
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col s12 z-depth-5 mainpanel">
-                        <div id="mainpanel-content">
+                    <div class="col-md-12">
                             <h1 id="header">Survey Questions</h1>
                             <div class="divider"></div>
-    
-                            <h3>About You</h3>
-    
-                            <div class="input-field col s6">
-                                <h5>Name (Required)</h5>
-                                <i class="material-icons prefix">account_circle</i>
+    <br>
+    <br>
+    <br>
+                            <div class="input-field col-md-6">
+                                <h4>Your Name (Required)</h4>
+                                <i class="fas fa-user-edit"></i>
                                 <input type="text" class="validate" placeholder="Your Name Here" id="userName">
                             </div>
-    
-                            <div class="input-field col s6">
-                                <h5>Link to Photo Image (Required)</h5>
-                                <i class="material-icons prefix">picture_in_picture</i>
+    <br>                        
+                            <div class="input-field col-md-6">
+                                <h4>Link to Photo Image (Required)</h4>
+                                <i class="fas fa-photo-video"></i>
                                 <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
                             </div>
-    
+    <br>
+    <br>
+    <br>
                             <!-- Survey Questions -->
-                            <div class="input-field col s12">
-                                <h3>Question 1</h3>
+                            <div class="input-field col-md-12">
+                                <h2>Question 1</h2>
+                                <br>
                                 <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
                                 <select id="question1">
                                     <option value="" disabled selected>Choose your option</option>
@@ -63,9 +63,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 2</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 2</h2>
+                                <br>
                                 <h5>You have an active imagination.</h5>
                                 <select id="question2">
                                     <option value="" disabled selected>Choose your option</option>
@@ -76,9 +77,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 3</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 3</h2>
+                                <br>
                                 <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
                                 <select id="question3">
                                     <option value="" disabled selected>Choose your option</option>
@@ -89,9 +91,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 4</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 4</h2>
+                                <br>
                                 <h5>Curiosity motivates you.</h5>
                                 <select id="question4">
                                     <option value="" disabled selected>Choose your option</option>
@@ -102,9 +105,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 5</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 5</h2>
+                                <br>
                                 <h5>People can rarely upset you.</h5>
                                 <select id="question5">
                                     <option value="" disabled selected>Choose your option</option>
@@ -115,9 +119,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 6</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 6</h2>
+                                <br>
                                 <h5>It is often difficult for you to relate to other people’s feelings.</h5>
                                 <select id="question6">
                                     <option value="" disabled selected>Choose your option</option>
@@ -128,9 +133,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 7</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 7</h2>
+                                <br>
                                 <h5>Truth should be more important than people’s sensitivities.</h5>
                                 <select id="question7">
                                     <option value="" disabled selected>Choose your option</option>
@@ -141,9 +147,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 8</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 8</h2>
+                                <br>
                                 <h5>You rarely get carried away by fantasies and ideas.</h5>
                                 <select id="question8">
                                     <option value="" disabled selected>Choose your option</option>
@@ -154,9 +161,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 9</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 9</h2>
+                                <br>
                                 <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
                                 <select id="question9">
                                     <option value="" disabled selected>Choose your option</option>
@@ -167,9 +175,10 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
-                            <div class="input-field col s12">
-                                <h3>Question 10</h3>
+                            <br>
+                            <div class="input-field col-md-12">
+                                <h2>Question 10</h2>
+                                <br>
                                 <h5>You enjoy spending time with people more than by yourself.</h5>
                                 <select id="question10">
                                     <option value="" disabled selected>Choose your option</option>
@@ -180,11 +189,11 @@
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-    
+                            <br>
                             <!-- Survey Submit Button -->
                             <div>
-                                <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
-                                    <i class="material-icons right">send</i>
+                                <button class="btn btn-light" type="submit" name="action" id="submitButton">Submit
+                                    <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
                         </div>
