@@ -1,4 +1,4 @@
-var friendsArray = [
+var friendsData = [
 	{
 		name: 'Billy',
 		photo: 'https://github.com/pamelatholan/FriendFinder/blob/master/app/public/images/billy.jpg',
@@ -161,4 +161,4 @@ var friendsArray = [
 	}
 ];
 
-module.exports = friendsArray;
+module.exports = friendsData;

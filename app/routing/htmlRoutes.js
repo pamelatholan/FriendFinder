@@ -2,7 +2,7 @@
 var path = require('path');
 
 // Export HTML routes
-module.exports = function(app) {
+function htmlRoutes(app) {
 	// console.log('___ENTER htmlRoutes.js___');
 
 	// Home page
@@ -15,3 +15,4 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, '../public/survey.html'));
 	});
 };
+module.exports = htmlRoutes;

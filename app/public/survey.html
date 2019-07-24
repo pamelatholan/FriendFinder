@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3094232144.js"></script>
@@ -19,7 +19,7 @@
         <div class="container2">
                 <div class="row">
                   <div class="col-md-6" id="col3">
-                        <a href="/home" class="text-light">Home</a>
+                        <a href="/" class="text-light">Home</a>
                   </div>
                   <div class="col-md-6" id="col4">
                         <a href="/api/friends" class="text-light">API Friends List</a>
@@ -38,13 +38,13 @@
                             <div class="input-field col-md-6">
                                 <h4>Your Name (Required)</h4>
                                 <i class="fas fa-user-edit"></i>
-                                <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+                                <input type="text" id="formName" placeholder="Your Name Here" id="userName">
                             </div>
     <br>                        
                             <div class="input-field col-md-6">
                                 <h4>Link to Photo Image (Required)</h4>
                                 <i class="fas fa-photo-video"></i>
-                                <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+                                <input type="text" id="formImage" placeholder="Photo Link Here" id="userPhoto">
                             </div>
     <br>
     <br>
@@ -54,7 +54,7 @@
                                 <h2>Question 1</h2>
                                 <br>
                                 <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
-                                <select id="question1">
+                                <select id="question1" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -68,7 +68,7 @@
                                 <h2>Question 2</h2>
                                 <br>
                                 <h5>You have an active imagination.</h5>
-                                <select id="question2">
+                                <select id="question2" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -82,7 +82,7 @@
                                 <h2>Question 3</h2>
                                 <br>
                                 <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
-                                <select id="question3">
+                                <select id="question3" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -96,7 +96,7 @@
                                 <h2>Question 4</h2>
                                 <br>
                                 <h5>Curiosity motivates you.</h5>
-                                <select id="question4">
+                                <select id="question4" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -110,7 +110,7 @@
                                 <h2>Question 5</h2>
                                 <br>
                                 <h5>People can rarely upset you.</h5>
-                                <select id="question5">
+                                <select id="question5" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -124,7 +124,7 @@
                                 <h2>Question 6</h2>
                                 <br>
                                 <h5>It is often difficult for you to relate to other people’s feelings.</h5>
-                                <select id="question6">
+                                <select id="question6" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -138,7 +138,7 @@
                                 <h2>Question 7</h2>
                                 <br>
                                 <h5>Truth should be more important than people’s sensitivities.</h5>
-                                <select id="question7">
+                                <select id="question7" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -152,7 +152,7 @@
                                 <h2>Question 8</h2>
                                 <br>
                                 <h5>You rarely get carried away by fantasies and ideas.</h5>
-                                <select id="question8">
+                                <select id="question8" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -166,7 +166,7 @@
                                 <h2>Question 9</h2>
                                 <br>
                                 <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
-                                <select id="question9">
+                                <select id="question9" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -180,7 +180,7 @@
                                 <h2>Question 10</h2>
                                 <br>
                                 <h5>You enjoy spending time with people more than by yourself.</h5>
-                                <select id="question10">
+                                <select id="question10" class="chosen-select">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
@@ -192,7 +192,7 @@
                             <br>
                             <!-- Survey Submit Button -->
                             <div>
-                                <button class="btn btn-light" type="submit" name="action" id="submitButton">Submit
+                                <button class="btn btn-light" type="submit" id="submitButton">Submit
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
@@ -203,63 +203,118 @@
         </main>
     
     
-        <!-- Modal Dialog Displaying Closest Friend Match -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <h4>Closest Friend Match</h4>
-                <div class="divider"></div>
-                <h5 id="userMatch"></h5>
-                <img id="userMatchImage" class="materialboxed" width="650" src="">
+      <!-- Match Modal -->
+      <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+    
+              <!-- Modal Content-->
+              <div class="modal-content">
+    
+                <!-- "X" Button to close the modal -->
+                <div class="modal-header">
+                  <h2 class="modal-title"><strong>Meet Your New Friend!</strong></h2>
+                </div>
+    
+                <!-- Modal Body (For Match Info) -->
+                <div class="modal-body">
+                  <h2 id="matchName"></h2>
+                  <img id="matchImg" src="" alt="Image Not Found" style="max-width: 350px;">
+                </div>
+    
+                <!-- Modal Footer (Close Button) -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+    
+              </div>
+    
             </div>
-            <div class="modal-footer">
-                <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
-            </div>
+          </div>
+    
+    
         </div>
     
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('select').material_select();
-                $('.modal').modal({
-                    dismissible: false, // Modal can be dismissed by clicking outside of the modal
-                    opacity: .5, // Opacity of modal background
-                    inDuration: 300, // Transition in duration
-                    outDuration: 200, // Transition out duration
-                    startingTop: '4%', // Starting top style attribute
-                    endingTop: '10%' // Ending top style attribute
-                });
+    
+        <script>
+          // Global Variable Declaration (scoping fix)
+          var allFieldsCompleted;
+          $(document).ready(function() {
+            // Event Listener for Submission
+            $('#submitButton').on('click', function() {
+              
+              // Check if all the user fields are completed
+              checkIfComplete(function(){
+                // Proceed with AJAX call if all questions are answered
+                if(allFieldsCompleted){
+                  collectInputs();
+                }
+                else{
+                  alert('Please complete all fields before submitting!');
+                }
+              }); // end checkIfComplete() callback
+            }); // end submit listener
+          }); // document ready
+          // Function to valid user input
+          function checkIfComplete(callback){
+            // Check through all the questions (i.e. iterate through all of class "chosen-select")
+            var questionsCompleted;
+            $('.chosen-select').each(function(){
+              if ( $(this).val() == "" ){
+                questionsCompleted = false;
+              }
+            })
+            // This counters the async behavior of $.each()
+            .promise().done(function(){
+              // Check if any questions are incomplete
+              if(questionsCompleted == false){
+                allFieldsCompleted = false;
+              }
+              // Determine if Name is entered
+              else if( $('#formName').val().trim() == "" ){
+                allFieldsCompleted = false;
+              }
+              // Determine if Link is entered
+              else if( $('#formImage').val().trim() == "" ){
+                allFieldsCompleted = false;
+              }
+              // Otherwise, the all fields are completed
+              else{
+                allFieldsCompleted = true;
+              }
+              // Fire Off Callback (to counter async behavior of $.each)
+              callback();       
             });
-            // Activate submit button
-            $('#submitButton').on('click', function(event) {
-                event.preventDefault();
-                // Gather user inputs
-                var userInput = {
-                    name: $('#userName').val().trim(),
-                    photo: $('#userPhoto').val().trim(),
-                    scores:[
-                        $('#question1').val().trim(),
-                        $('#question2').val().trim(),
-                        $('#question3').val().trim(),
-                        $('#question4').val().trim(),
-                        $('#question5').val().trim(),
-                        $('#question6').val().trim(),
-                        $('#question7').val().trim(),
-                        $('#question8').val().trim(),
-                        $('#question9').val().trim(),
-                        $('#question10').val().trim()
-                    ]
-                };
-                // console.log('userInput = ' + JSON.stringify(userInput));
-                // Add user inputs to friends list
-                $.post('/api/friends', userInput)
-                  .done(function(data) {
-                      // console.log('response = ' + JSON.stringify(data));
-                      // Set the name and image values of friend match
-                      $('#userMatch').html(data.matchName);
-                    $("#userMatchImage").attr("src", data.matchImage);
-                    // Pop open the modal dialog
-                      $('#modal1').modal('open');
-                  });
+          }
+          function collectInputs(){
+            // Make new friend object
+            var newFriend = {
+              name: $('#formName').val().trim(),
+              photo: $('#formImage').val().trim(),
+              scores: []
+            };
+            // Loop through Questions to get scores
+            var scoresArray = [];
+            $('.chosen-select').each(function(){
+              scoresArray.push( parseInt( $(this).val() ) ); // Parse Input Value as integer
+            })
+             // This counters the async behavior of $.each()
+            .promise().done(function(){
+              
+              // Push the array of scores to the new friend object
+              newFriend.scores = scoresArray;
+              // POST the newFriend to the friends.js file and get back the best match
+              var currentURL = window.location.origin;
+              $.post(currentURL + "/api/friends", newFriend, function(data){
+                // Add Best Match attributes to Modal
+                $('#matchName').text(data.name);
+                $('#matchImg').attr('src', data.photo);
+                // Show the modal with the best match 
+                $("#resultsModal").modal('toggle');
+              }); // end AJAX POST
             });
+          }
         </script>
-    </body>
+    
+      </body>
+    
     </html>

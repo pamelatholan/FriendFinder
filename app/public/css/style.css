@@ -11,7 +11,7 @@
 h1 {
     color: white;
     margin-top: -50px;
-    margin-left: 475px;
+    margin-left: 425px;
     font-size: 20px;
     font-family: 'Atomic Age', cursive;
     /* font-family: 'Bigelow Rules', cursive; */
@@ -97,6 +97,13 @@ h5 {
     margin-bottom: 20px;
 
 }
+
+.modal-header {
+    color: black;
+    font-size: 20px;
+    margin-right: 0;
+}
+
 
 
 

@@ -1,59 +1,73 @@
-// Pull in required dependencies
-var path = require('path');
+// Link in Friends Data
+var friendsData = require('../data/friends.js');
 
-// Import the list of friend entries
-var friends = require('../data/friends.js');
 
-// Export API routes
-module.exports = function(app) {
-	// console.log('___ENTER apiRoutes.js___');
+// Includes Two Routes
+function apiRoutes(app) {
 
-	// Total list of friend entries
-	app.get('/api/friends', function(req, res) {
-		res.json(friends);
-	});
+  // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
+  app.get('/api/friends', function (req, res) {
+    res.json(friendsData);
+  });
 
-	// Add new friend entry
-	app.post('/api/friends', function(req, res) {
-		// Capture the user input object
-		var userInput = req.body;
-		// console.log('userInput = ' + JSON.stringify(userInput));
+  // A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+  app.post('/api/friends', function (req, res) {
 
-		var userResponses = userInput.scores;
-		// console.log('userResponses = ' + userResponses);
+    // Parse new friend input to get integers (AJAX post seemed to make the numbers strings)
+    var newFriend = {
+      name: req.body.name,
+      photo: req.body.photo,
+      scores: []
+    };
+    var scoresArray = [];
+    for(var i=0; i < req.body.scores.length; i++){
+      scoresArray.push( parseInt(req.body.scores[i]) )
+    }
+    newFriend.scores = scoresArray;
 
-		// Compute best friend match
-		var matchName = '';
-		var matchImage = '';
-		var totalDifference = 10000; // Make the initial value big for comparison
 
-		// Examine all existing friends in the list
-		for (var i = 0; i < friends.length; i++) {
-			// console.log('friend = ' + JSON.stringify(friends[i]));
+    // Cross check the new friend entry with the existing ones
+    var scoreComparisionArray = [];
+    for(var i=0; i < friendsData.length; i++){
 
-			// Compute differenes for each question
-			var diff = 0;
-			for (var j = 0; j < userResponses.length; j++) {
-				diff += Math.abs(friends[i].scores[j] - userResponses[j]);
-			}
-			// console.log('diff = ' + diff);
+      // Check each friend's scores and sum difference in points
+      var currentComparison = 0;
+      for(var j=0; j < newFriend.scores.length; j++){
+        currentComparison += Math.abs( newFriend.scores[j] - friendsData[i].scores[j] );
+      }
 
-			// If lowest difference, record the friend match
-			if (diff < totalDifference) {
-				// console.log('Closest match found = ' + diff);
-				// console.log('Friend name = ' + friends[i].name);
-				// console.log('Friend image = ' + friends[i].photo);
+      // Push each comparison between friends to array
+      scoreComparisionArray.push(currentComparison);
+    }
 
-				totalDifference = diff;
-				matchName = friends[i].name;
-				matchImage = friends[i].photo;
-			}
-		}
+    // Determine the best match using the postion of best match in the friendsData array
+    var bestMatchPosition = 0; // assume its the first person to start
+    for(var i=1; i < scoreComparisionArray.length; i++){
+      
+      // Lower number in comparison difference means better match
+      if(scoreComparisionArray[i] <= scoreComparisionArray[bestMatchPosition]){
+        bestMatchPosition = i;
+      }
 
-		// Add new user
-		friends.push(userInput);
+    }
 
-		// Send appropriate response
-		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
-	});
-};
+    // ***NOTE*** If the 2 friends have the same comparison, then the NEWEST entry in the friendsData array is chosen
+    var bestFriendMatch = friendsData[bestMatchPosition];
+
+
+
+    // Reply with a JSON object of the best match
+    res.json(bestFriendMatch);
+
+
+
+    // Push the new friend to the friends data array for storage
+    friendsData.push(newFriend);
+
+  });
+
+}
+
+
+// Export for use in main server.js file
+module.exports = apiRoutes;
