@@ -4,6 +4,10 @@
     margin-left: 350px;
 }
 
+.container {
+    margin-top: 50px;
+}
+
 h1 {
     color: white;
     margin-top: -50px;
@@ -30,3 +34,24 @@ body {
 
 
 }
+
+.container1 {
+    margin-left: 250px;
+    
+}
+
+
+#col1 {
+    font-family: 'Atomic Age', cursive;
+    font-size: 30px;
+    padding-right: 300px;
+
+}
+
+#col2 {
+    font-family: 'Atomic Age', cursive;
+    font-size: 30px;
+    padding-left: 200px;
+
+}
+
