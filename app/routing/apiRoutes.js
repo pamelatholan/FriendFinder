@@ -27,7 +27,7 @@ function apiRoutes(app) {
 
 
     // Cross check the new friend entry with the existing ones
-    var scoreComparisionArray = [];
+    var scoreComparisonArray = [];
     for(var i=0; i < friendsData.length; i++){
 
       // Check each friend's scores and sum difference in points
@@ -37,15 +37,15 @@ function apiRoutes(app) {
       }
 
       // Push each comparison between friends to array
-      scoreComparisionArray.push(currentComparison);
+      scoreComparisonArray.push(currentComparison);
     }
 
     // Determine the best match using the postion of best match in the friendsData array
     var bestMatchPosition = 0; // assume its the first person to start
-    for(var i=1; i < scoreComparisionArray.length; i++){
+    for(var i=1; i < scoreComparisonArray.length; i++){
       
       // Lower number in comparison difference means better match
-      if(scoreComparisionArray[i] <= scoreComparisionArray[bestMatchPosition]){
+      if(scoreComparisonArray[i] <= scoreComparisonArray[bestMatchPosition]){
         bestMatchPosition = i;
       }
 
