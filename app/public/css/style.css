@@ -66,10 +66,9 @@ h5 {
     font-size: 20px;
 }
 
-#submit {
-    text-align: center;
+#submitButton {
     margin-top: 20px;
-}
+text-align: center;}
 
 .modal-header {
     color: black;
@@ -99,11 +98,6 @@ h5 {
     font-size: 20px;
 }
 
-#bottom, #top {
-padding-left: 75px;
-/* background-color: black; */
-}
-
-#bottom {
-    padding-bottom: 20px;
+#name{
+    text-align: center;
 }
