@@ -1,28 +1,26 @@
 /* HOME PAGE */
-
-#header {
-    margin-left: 350px;
-}
-
-.container {
+#logo {
     margin-top: 50px;
+    justify-content: center;
 }
 
 h1 {
     color: white;
     margin-top: -50px;
-    margin-left: 425px;
+    margin-left: 485px;
     font-size: 20px;
     font-family: 'Atomic Age', cursive;
-    /* font-family: 'Bigelow Rules', cursive; */
-    /* font-family: 'Bahiana', cursive; */
-    /* font-family: 'IM Fell DW Pica SC', serif; */
-
 }
 
 body {
-    background-image: url("../images/upsidedown.jpg");
-    color: white;
+    background-image: url("../images/background3.jpg");
+    background-size: 125%;
+    color:white;
+}
+
+#body2 {
+    background-image: url("../images/background3.jpg");
+    background-size: 125%;
 }
 
 #header {
@@ -31,33 +29,21 @@ body {
     margin-left: 350px;
     font-size: 50px;
     font-family: 'Atomic Age', cursive;
-
-
 }
-
-.container1 {
-    margin-left: 250px;
-    
-}
-
 
 #col1 {
     font-family: 'Atomic Age', cursive;
-    font-size: 30px;
-    padding-right: 300px;
+    font-size: 50px;
+    text-align: center;
 }
 
-#col2 {
+#home {
     font-family: 'Atomic Age', cursive;
     font-size: 30px;
-    padding-left: 200px;
-}
-
-#col3 {
-    font-family: 'Atomic Age', cursive;
-    font-size: 30px;
-    padding-left: 300px;
+    padding-left: 30px;
     margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }
 
 #col4 {
@@ -67,35 +53,22 @@ body {
     margin-top: 10px;
 }
 
-#header {
-    margin-left: 300px;
-    margin-top: -20px;
-}
-
 h2 {
     font-family: 'Atomic Age', cursive;
-    margin-left: 200px;
-    
 }
 
 h4 {
     font-family: 'Atomic Age', cursive;
-
 }
 
 h5 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 200px;
+    font-family: 'Lucida Sans';
+    font-size: 20px;
 }
 
-#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10 {
-    margin-left: 200px;
-}
-
-#submitButton {
-    margin-left: 500px;
-    margin-bottom: 20px;
-
+#submit {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .modal-header {
@@ -109,8 +82,8 @@ h5 {
 }
 
 .chosen-select{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin-top: 10px;
 }
 
@@ -126,6 +99,11 @@ h5 {
     font-size: 20px;
 }
 
+#bottom, #top {
+padding-left: 75px;
+/* background-color: black; */
+}
 
-
-
+#bottom {
+    padding-bottom: 20px;
+}

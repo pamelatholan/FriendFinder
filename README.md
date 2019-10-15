@@ -1,4 +1,4 @@
-# FriendFinder
+# Friend Finder
 
 Deployed on [Heroku](https://fast-citadel-45047.herokuapp.com/)
 

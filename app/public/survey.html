@@ -15,15 +15,15 @@
 
     <title>Survey</title>
 </head>
-<body>
+<body id="body2">
         <div class="container2">
                 <div class="row">
-                  <div class="col-md-6" id="col3">
+                  <div class="col-md-12" id="home">
                         <a href="/" class="text-light">Home</a>
                   </div>
-                  <div class="col-md-6" id="col4">
+                  <!-- <div class="col-md-6" id="col4">
                         <a href="/api/friends" class="text-light">API Friends List</a>
-                  </div>
+                  </div> -->
                 </div>
             
         <main>
@@ -31,7 +31,9 @@
                 <div class="row">
                     <div class="col-md-12">
                             <h1 id="header">Survey Questions</h1>
-                            <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
     <br>
     <br>
     <br>
@@ -41,160 +43,168 @@
                                 <input type="text" id="formName" placeholder="Your Name Here" id="userName">
                             </div>
     <br>                        
-                            <div class="input-field col-md-6">
+                            <!-- <div class="input-field col-md-6">
                                 <h4>Link to Photo Image (Required)</h4>
                                 <i class="fas fa-photo-video"></i>
                                 <input type="text" id="formImage" placeholder="Photo Link Here" id="userPhoto">
-                            </div>
+                            </div> -->
+    <!-- <br>
     <br>
-    <br>
-    <br>
+    <br> -->
                             <!-- Survey Questions -->
-                            <div class="input-field col-md-12">
-                                <h2>Question 1</h2>
+                            <div class="row" id="top">
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 1</h2> -->
                                 <br>
-                                <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+                                <h5>1. Your mind is always buzzing with unexplored ideas and plans.</h5>
                                 <select id="question1" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 2</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 2</h2> -->
                                 <br>
-                                <h5>You have an active imagination.</h5>
+                                <h5>6. You have an active imagination.</h5>
                                 <select id="question2" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 3</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 3</h2> -->
                                 <br>
-                                <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                                <h5>2. You find it easy to stay relaxed and focused even when there is some pressure.</h5>
                                 <select id="question3" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 4</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 4</h2> -->
                                 <br>
-                                <h5>Curiosity motivates you.</h5>
+                                <h5>7. Curiosity motivates you.</h5>
                                 <select id="question4" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 5</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 5</h2> -->
                                 <br>
-                                <h5>People can rarely upset you.</h5>
+                                <h5>3. People can rarely upset you.</h5>
                                 <select id="question5" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 6</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 6</h2> -->
                                 <br>
-                                <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+                                <h5>8. It is often difficult for you to relate to other people’s feelings.</h5>
                                 <select id="question6" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
-                            <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 7</h2>
+                            </div>
+                            <!-- <br> -->
+                            <div class="row" id="bottom">
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 7</h2> -->
                                 <br>
-                                <h5>Truth should be more important than people’s sensitivities.</h5>
+                                <h5>4. Truth should be more important than people’s sensitivities.</h5>
                                 <select id="question7" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 8</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 8</h2> -->
                                 <br>
-                                <h5>You rarely get carried away by fantasies and ideas.</h5>
+                                <h5>9. You rarely get carried away by fantasies and ideas.</h5>
                                 <select id="question8" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 9</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 9</h2> -->
                                 <br>
-                                <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                                <h5>5. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
                                 <select id="question9" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
                             </div>
                             <br>
-                            <div class="input-field col-md-12">
-                                <h2>Question 10</h2>
+                            <div class="input-field col-md-6">
+                                <!-- <h2>Question 10</h2> -->
                                 <br>
-                                <h5>You enjoy spending time with people more than by yourself.</h5>
+                                <h5>10. You enjoy spending time with people more than by yourself.</h5>
                                 <select id="question10" class="chosen-select">
-                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" disabled selected>Select option</option>
                                     <option value="1">1 (Strongly Disagree)</option>
                                     <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="3">3 (Neutral)</option>
                                     <option value="4">4</option>
                                     <option value="5">5 (Strongly Agree)</option>
                                 </select>
+                            </div>
                             </div>
                             <br>
                             <!-- Survey Submit Button -->
                             <div>
-                                <button class="btn btn-light" type="submit" id="submitButton">Submit
+                              <div class="row">
+                                <div class="col-md-12" id="submit">
+                                <button class="btn btn-outline-light btn-lg" type="submit" id="submitButton">Submit
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
+                              </div>
+                              </div>
                             </div>
                         </div>
                     </div>
