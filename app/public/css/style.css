@@ -101,3 +101,143 @@ text-align: center;}
 #name{
     text-align: center;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #logo {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: -50px;
+        margin-left: 485px;
+        font-size: 20px;
+        font-family: 'Atomic Age', cursive;
+    }
+    
+    body {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+        color:white;
+    }
+    
+    #body2 {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+    }
+
+    #col1, #survey {
+        text-align: center;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #logo {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: -50px;
+        margin-left: 485px;
+        font-size: 20px;
+        font-family: 'Atomic Age', cursive;
+    }
+    body {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+        color:white;
+    }
+    
+    #body2 {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #logo {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: -50px;
+        margin-left: 485px;
+        font-size: 20px;
+        font-family: 'Atomic Age', cursive;
+    }
+    body {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+        color:white;
+    }
+    
+    #body2 {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #logo {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: -50px;
+        margin-left: 485px;
+        font-size: 20px;
+        font-family: 'Atomic Age', cursive;
+    }
+    body {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+        color:white;
+    }
+    
+    #body2 {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #logo {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        margin-top: -50px;
+        margin-left: 485px;
+        font-size: 20px;
+        font-family: 'Atomic Age', cursive;
+    }
+    body {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+        color:white;
+    }
+    
+    #body2 {
+        background-image: url("../images/background3.jpg");
+        background-size: 125%;
+    }
+    
+}
