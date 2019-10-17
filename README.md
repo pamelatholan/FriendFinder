@@ -1,5 +1,7 @@
 # Friend Finder
 
+![Home](https://github.com/pamelatholan/FriendFinder/blob/master/app/public/images/homepage.JPG)
+
 Deployed on [Heroku](https://fast-citadel-45047.herokuapp.com/)
 
 #### Compatibility-based "FriendFinder" application.  This full-stack site will take in results from a survey, then compare the answers with those from potential matches.  The app will then display the name and picture of the user with the best overall match.
